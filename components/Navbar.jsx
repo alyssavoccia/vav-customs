@@ -55,7 +55,7 @@ const Navbar = () => {
         </ul>
         <div className={styles.viewCart} onClick={() => dispatch({ type: 'OPEN_CART' })}>
           <FontAwesomeIcon className={styles.cartIcon} icon={faCartShopping} />
-          <span className={styles.cartCount}>{checkout && totalItems}</span>
+          <span className={styles.cartCount}>{checkout ? totalItems : 0}</span>
         </div>
         <div onClick={navToggle} className={mobileIcon}>
           <div className={styles.line1}></div>

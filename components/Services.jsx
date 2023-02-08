@@ -42,7 +42,7 @@ const Services = () => {
         <div className={styles.shopInfo}>
           <div className={styles.shopInfoText}>
             <p className={styles.shopInfoTitle}>Want to see what goes on behind the scenes?</p>
-            <p>See the shop setup, what tools I use, and what I recommend to get started!</p>
+            <p className={styles.shopInfoDesc}>See the shop setup, what tools I use, and what I recommend to get started!</p>
           </div>
           <Link className='btn btnPrimary' href='/the-shop'>Check out The Shop!</Link>
         </div>

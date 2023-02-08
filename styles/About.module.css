@@ -39,10 +39,17 @@
 }
 
 .aboutTitle {
+  margin: 0 auto;
   max-width: 266px;
 }
 
 .aboutInfo p {
   color: #656565;
   line-height: 1.4;
+}
+
+@media (min-width: 704px) {
+  .aboutTitle {
+    margin: 0;
+  }
 }

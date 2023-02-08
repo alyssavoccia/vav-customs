@@ -83,8 +83,16 @@
   margin: 0;
 }
 
+.shopInfoDesc {
+  padding: 1rem 0;
+}
+
 @media (min-width: 769px) {
   .shopInfo {
+    padding: 0;
+  }
+
+  .shopInfoDesc {
     padding: 0;
   }
 }
