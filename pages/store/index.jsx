@@ -19,7 +19,7 @@ const store = ({ products }) => {
         </div>
         <img className="" src='/images/grid-images/shelf3.jpg' />
       </div>
-      <div className={styles.storeContainer}>
+      <div className={styles.categoryContainer}>
         <h2>Shop by Category</h2>
         <StoreCategories />
       </div>

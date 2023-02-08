@@ -4,7 +4,7 @@ import styles from '@/styles/PostPage.module.css';
 
 const PostPage = ({ post }) => {
   return (
-    <Layout title={post.title}>
+    <Layout title={`${post.title} | VAV Customs`}>
       <section className={`pageSection ${styles.blogPost}`}>
         <div className={styles.blogHeader}>
           <p className={styles.blogPostCategory}>{post.category}</p>

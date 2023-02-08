@@ -16,9 +16,7 @@ const Cart = () => {
 
   useEffect(() => {
     if (checkout) {
-      console.log(checkout)
       setLineItems(checkout.lineItems.map(line_item => {
-        console.log(line_item)
         return (
           <LineItem key={line_item.id.toString()} lineItem={line_item} />
         )
@@ -43,7 +41,7 @@ const Cart = () => {
           <div className={styles.cartInfo}>
             <div className={styles.cartPrice}>
               <p>Subtotal</p>
-              <p>${checkout.lineItemsSubtotalPrice.amount}</p>
+              <p>${parseFloat(checkout.lineItemsSubtotalPrice.amount).toFixed(2)}</p>
             </div>
             <p className={styles.priceSmall}>Taxes & Shipping Determined at Checkout</p>
           </div>

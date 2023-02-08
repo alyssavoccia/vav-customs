@@ -7,19 +7,10 @@ import styles from '@/styles/Navbar.module.css';
 import CartContext from "@/context/CartContext";
 
 const Navbar = () => {
-  const { checkout, dispatch } = useContext(CartContext);
+  const { totalItemsInCart, dispatch } = useContext(CartContext);
   const router = useRouter();
-  const [totalItems, setTotalItems] = useState(0);
   const [active, setActive] = useState(styles.menu);
   const [mobileIcon, setMobileIcon] = useState(styles.toggler);
-
-  useEffect(() => {
-    if (checkout) {
-      checkout.lineItems.map(lineItem => {
-        setTotalItems(prevState => prevState + lineItem.quantity);
-      });
-    }
-  }, [checkout]);
 
   const navToggle = () => {
     if (window.innerWidth < 768) {
@@ -50,12 +41,12 @@ const Navbar = () => {
             <Link className={router.pathname === '/custom-build' ? styles.activeMenu : ''} onClick={navToggle} href='/custom-build'>Custom Build</Link>
           </li>
           <li>
-            <Link className={router.pathname.includes('/store') &&  styles.activeMenu} onClick={navToggle} href='/store'>Store</Link>
+            <Link className={router.pathname.includes('/store') ?  styles.activeMenu: ''} onClick={navToggle} href='/store'>Store</Link>
           </li>
         </ul>
         <div className={styles.viewCart} onClick={() => dispatch({ type: 'OPEN_CART' })}>
           <FontAwesomeIcon className={styles.cartIcon} icon={faCartShopping} />
-          <span className={styles.cartCount}>{checkout ? totalItems : 0}</span>
+          <span className={styles.cartCount}>{totalItemsInCart}</span>
         </div>
         <div onClick={navToggle} className={mobileIcon}>
           <div className={styles.line1}></div>

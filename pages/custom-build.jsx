@@ -122,7 +122,7 @@ const CustomBuild = () => {
   };
 
   return (
-    <Layout>
+    <Layout title='Custom Build | VAV Customs'>
       <section className='pageSection'>
         <div className={styles.customBuildTitleContainer}>
           <h1 className='sectionTitle'>Custom Build</h1>

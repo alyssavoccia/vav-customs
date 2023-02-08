@@ -7,7 +7,7 @@ import styles from '@/styles/BlogPage.module.css';
 
 const BlogPage = ({ posts, numPages, currentPage, categories }) => {
   return (
-    <Layout title='Blog'>
+    <Layout title='Blog | VAV Customs'>
       <section className={`pageSection ${styles.blogSection}`}>
         <div className={styles.blogTitleContainer}>
           <h1 className="sectionTitle">Blog</h1>
