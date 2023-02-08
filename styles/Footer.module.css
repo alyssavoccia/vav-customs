@@ -1,0 +1,32 @@
+.footer {
+  background-color: #222;
+  color: #FFF;
+  display: grid;
+  margin-top: auto;
+  width: 100%;
+}
+
+.info {
+  align-content: center;
+  display: grid;
+  grid-template-rows: repeat(2, 150px);
+  height: 40vh;
+  margin: auto;
+  max-width: 1100px;
+}
+
+.footerTitle {
+  align-self: end;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.socialIcons {
+  align-self: start;
+  padding: 1rem;
+  text-align: center;
+}
+
+.socialIcons svg {
+  padding: 1rem;
+}

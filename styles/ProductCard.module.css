@@ -1,0 +1,35 @@
+.productCard {
+  border: 1px solid #DEDEDE;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  max-width: 320px;
+}
+
+.productCard img {
+  border-radius: 5px 5px 0 0;
+  height: 250px;
+  object-fit: cover;
+  width: 100%;
+}
+
+.productCardBody,
+.productCardFooter {
+  padding: 1rem;
+}
+
+.productCardTitle,
+.productCardFooter p {
+  font-weight: 600;
+}
+
+.productCardDesc {
+  color: #656565;
+  margin-top: .5rem;
+}
+
+.productCardFooter {
+  margin-top: auto;
+}

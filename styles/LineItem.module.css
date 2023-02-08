@@ -1,0 +1,77 @@
+.lineItem {
+  display: flex;
+  gap: 1rem;
+  min-height: 65px;
+  margin-bottom: 20px;
+  opacity: 1;
+  overflow: hidden;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.itemImg {
+  border-radius: 5px;
+  height: 65px;
+  object-fit: cover;
+  width: 70px;
+}
+
+.itemContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.contentHeader,
+.contentFooter {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.itemTitle {
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+
+.itemPrice {
+  font-weight: 500;
+  text-align: right;
+}
+
+.quantityContainer {
+  align-items: center;
+  display: flex;
+  gap: .5rem;
+}
+
+.quantityUpdate {
+  background: none;
+  border-radius: 5px;
+  border: 1px solid #e5e7eb;
+  cursor: pointer;
+  display: block;
+  height: 25px;
+  line-height: 16px;
+  transition: all .1s ease-in;
+  width: 25px;
+}
+
+.minus {
+  padding-bottom: 2px;
+}
+
+.quantityUpdate:hover {
+  background-color: #e5e7eb;
+}
+
+.itemRemove {
+  color: #8A6A46;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all .1s ease-in;
+}
+
+.itemRemove:hover {
+  color: #AE885E;
+}

@@ -1,0 +1,61 @@
+.blogPostCard {
+  background-color: #f3f4f6;
+  border-radius: 0 0 5px 5px;
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+  margin: 1rem auto 0;
+  width: 100%;
+  max-width: 350px;
+}
+
+.blogPostCardImg {
+  border-radius: 5px 5px 0 0;
+  height: 200px;
+  object-fit: cover;
+  width: 100%;
+}
+
+.blogPostCardContent {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  width: 100%;
+}
+
+.blogPostCardDate {
+  color: #656565;
+  font-weight: 300;
+}
+
+.blogPostCardText {
+  margin-top: .5rem;
+}
+
+.blogPostCardTitle {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: .5rem;
+}
+
+.blogPostCardFooter {
+  align-items: flex-end;
+  display: flex;
+  font-size: 14px;
+  margin-top: auto;
+  padding: 0 1rem 1rem;
+}
+
+.blogPostCardCat {
+  background-color: #e7e5e4;
+  border-radius: 1rem;
+  color: #44403c;
+  padding: .5rem .75rem;
+}
+
+@media (min-width: 769px) {
+  .blogPostCard {
+    max-width: 100%;
+  }
+}

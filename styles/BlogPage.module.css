@@ -1,0 +1,35 @@
+.blogSection {
+  margin: 0 auto;
+  width: 95%;
+  max-width: 1100px;
+}
+
+.blogTitleContainer {
+  margin: 0 auto;
+  width: 95px;
+}
+
+.categoryTitleContainer {
+  margin: 0 auto;
+  width: 310px;
+}
+
+.blogPosts {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  gap: 1.5rem;
+  justify-content: center;
+}
+
+@media (min-width: 769px) {
+  .blogPosts {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+
+@media (min-width: 1100px) {
+  .blogPosts {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}

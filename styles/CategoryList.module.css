@@ -1,0 +1,21 @@
+.categoryList {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  list-style-type: none;
+  padding: 2rem 0
+}
+
+.categoryList li {
+  border-radius: 5px;
+  background-color: #DEDEDE;
+  padding: .5rem;
+}
+
+.categoryList li:hover {
+  background-color: #C8C8C8;
+}
+
+.categoryList li.activeItem {
+  background-color: #C8C8C8;
+}

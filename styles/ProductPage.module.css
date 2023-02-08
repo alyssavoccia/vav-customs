@@ -1,0 +1,45 @@
+.productPage {
+  padding: 5rem 0 3rem 0;
+}
+
+.productContainer {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  margin: auto;
+  width: 95%;
+  max-width: 1200px;
+}
+
+.productContainer div {
+  flex: 1;
+}
+
+.productImg {
+  border-radius: 5px;
+  width: 100%;
+  max-width: 600px;
+}
+
+.productHeader {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.productTitle {
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+.productInfo h2 {
+  font-size: 1.1rem;
+  font-weight: normal;
+  margin-top: 2rem;
+}
+
+.productInfo p {
+  color: #656565;
+  line-height: 1.5;
+  margin-top: 1rem;
+}

@@ -1,0 +1,35 @@
+.shopTitleContainer {
+  margin: 0 auto;
+  width: 200px;
+}
+
+.shopContent {
+  margin: 2rem 0;
+  text-align: center;
+}
+
+.shopContent img {
+  height: auto;
+  max-width: 600px;
+}
+
+.shopFavorites,
+.shopRecommendations {
+  padding: 3rem 0;
+}
+
+.shopFavoritesTitle {
+  margin: auto;
+  width: 260px;
+}
+
+.shopRecommendationsTitle {
+  margin: auto;
+  width: 350px;
+}
+
+@media (min-width: 500px) {
+  .shopRecommendationsTitle {
+    width: 390px;
+  }
+}

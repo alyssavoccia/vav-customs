@@ -1,0 +1,24 @@
+.blogSection {
+  padding: 3rem 0;
+}
+
+.blogSectionContent {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  margin: 5rem 0;
+  text-align: center;
+}
+
+.blogContentText {
+  color: #656565;
+  font-size: 1.5rem;
+}
+
+.blogContentTextMain {
+  color: #222;
+  font-size: 1.7rem;
+  font-weight: 800;
+}
