@@ -9,7 +9,9 @@
 }
 
 .shopContent img {
+  border-radius: 5px;
   height: auto;
+  width: 95%;
   max-width: 600px;
 }
 
@@ -20,12 +22,12 @@
 
 .shopFavoritesTitle {
   margin: auto;
-  width: 260px;
+  width: 230px;
 }
 
 .shopRecommendationsTitle {
   margin: auto;
-  width: 350px;
+  width: 340px;
 }
 
 @media (min-width: 500px) {

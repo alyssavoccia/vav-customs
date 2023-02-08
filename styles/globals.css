@@ -60,11 +60,11 @@ a {
 }
 
 .sectionSubtitle {
-  font-size: 1.9rem;
+  font-size: 1.8rem;
 }
 
 .sectionSubtitle:after {
-  bottom: -10px;
+  bottom: -11px;
 }
 
 .btn {
