@@ -29,7 +29,7 @@ const Cart = () => {
 
   if (!loading) {
     return (
-      <div className={`${styles.cart} ${isCartOpen && styles.cartOpen}`}>
+      <div className={`${styles.cart} ${isCartOpen ? styles.cartOpen : ''}`}>
         <header className={styles.cartHeader}>
           <p>Your Cart</p>
           <button className={styles.cartClose} onClick={() => dispatch({ type: 'CLOSE_CART' })}>

@@ -11,7 +11,14 @@
 }
 
 .storeNavList {
+  align-items: center;
   display: flex;
-  gap: 1.5rem;
+  gap: 1rem;
   list-style-type: none;
+}
+
+@media (min-width: 769px) {
+  .storeNavList {
+    gap: 1.5rem;
+  }
 }
