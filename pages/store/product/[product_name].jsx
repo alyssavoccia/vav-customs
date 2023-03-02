@@ -32,9 +32,7 @@ const ProductPage = ({ product }) => {
             </div>
             <div className={styles.productInfo}>
               <h2>Description</h2>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque ultricies fermentum. Aliquam convallis luctus mollis. Proin sollicitudin, sem ac tincidunt rhoncus, leo neque scelerisque est, sit amet varius enim enim ut mi. Curabitur rutrum nulla purus, eu congue odio ullamcorper vel.
-              </p>
+              {product.description}
               <button disabled={!product.availableForSale} className={`${styles.cartBtn} ${!product.availableForSale ? styles.noHover : ''}`} onClick={handleAdd}>{product.availableForSale ? 'Add to Cart' : 'Sold Out'}</button>
             </div>
           </div>
